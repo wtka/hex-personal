@@ -1,0 +1,18 @@
+@use "../utilities" as *;
+
+.footer {
+  text-align: center;
+  color: clr(primary, 100);
+  background-color: clr(primary, 900);
+  padding: rem(64px) 0;
+
+  &__link {
+    color: clr(primary, 100);
+    text-decoration: none;
+
+    &:hover {
+      color: clr(primary, 900);
+      background-color: clr(primary, 100);
+    }
+  }
+}

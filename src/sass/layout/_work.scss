@@ -1,0 +1,19 @@
+@use "../utilities" as *;
+
+.work {
+  &__title {
+    font-size: fs(large);
+    line-height: 1.3125;
+    margin-bottom: rem(16px);
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__subtitle {
+    font-size: fs(normal);
+    line-height: 2.1;
+  }
+}

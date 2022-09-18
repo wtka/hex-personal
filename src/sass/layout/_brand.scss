@@ -1,0 +1,31 @@
+@use "../utilities" as *;
+
+.brand {  
+  text-align: center;
+  color: clr(primary, 100);
+  background-color: clr(primary, 900);
+  margin-bottom: rem(56px);
+
+  &__title {
+    font-size: fs(large);    
+    line-height: 1.3125;
+    padding-top: rem(56px);
+    margin-bottom: rem(12px);
+  }
+
+  &__subtitle {    
+    line-height: 1.75;
+    margin-bottom: rem(32px);
+  }
+  
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+  }
+
+  &__item:last-child {
+    width: rem(588px);
+    margin-bottom: rem(160px);        
+  }
+}

@@ -1,0 +1,41 @@
+@use "../utilities" as *;
+
+.banner {  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: rem(56px);
+  height: rem(958px);
+  color: clr(primary, 100);  
+  background-image: url('https://hexschool.github.io/webLayoutTraining1st/week2/banner.png');  
+
+  &__title {
+    margin-bottom: rem(32px);
+
+    p:first-child {
+      font-size: fs(medium);
+      font-weight: fw(bold);
+      line-height: 1.333333333333333;
+    }
+
+    p:last-child {
+      font-size: fs(xlarge);
+      font-weight: fw(bolder);
+      line-height: 1.325;
+    }
+  }
+
+  &__info {
+    font-weight: fw(bold);
+    margin-bottom: rem(40px);
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {  
+    margin-right: rem(16px);
+  }
+}
